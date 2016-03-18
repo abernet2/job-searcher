@@ -30,7 +30,7 @@ class BuiltInPage:
             if pot_header in headers:
                 header = pot_header
                 lists[header] = []
-            elif lists.hkas_key(header):
+            elif lists.has_key(header):
                 lists[header].append(pg)
 
         # check for lists not separated by \n
@@ -86,7 +86,4 @@ def is_header(str):
 
 def headerify(str):
     return str.strip().replace(':', '')
-
-
-page = BuiltInPage("http://www.builtinchicago.org/job/javascript-engineer-4")
-print(page.position)
+    
