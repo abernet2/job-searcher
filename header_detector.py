@@ -20,9 +20,10 @@ def get_featureset():
 # Categories for headers
     # Job Description
     # Company Description
+        #  Perks
     # Job Requirements
     # Job Preferences
-    # 
+    # Steps to Apply
 
 print(get_featureset())
 # print(header_features('asdasda. Ras al gul! Yippe:'))
