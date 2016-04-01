@@ -1,0 +1,889 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html debug="true" dir="ltr" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).loader_config={xpid:"VwUDVFJQGwECVllWDgQ="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(14),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(15),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7);t("loader").features.stn=!0,t(6);var c=NREUM.o.EV;o.on("fn-start",function(t,e){var n=t[0];n instanceof c&&(this.bstStart=Date.now())}),o.on("fn-end",function(t,e){var n=t[0];n instanceof c&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),s.on("fn-start",function(){this.bstStart=Date.now()}),s.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on("pushState-start",function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on("pushState-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",r,!1),document.addEventListener("keypress",r,!1),document.addEventListener("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty("addEventListener");)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,["addEventListener","removeEventListener"],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(16)(a),c=t("gos");e.exports=a,o(window),"getPrototypeOf"in Object?(r(document),r(XMLHttpRequest.prototype)):XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&o(XMLHttpRequest.prototype),a.on("addEventListener-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(16)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],9:[function(t,e,n){function r(t,e){e=e||this;var n=a.context(e);e.readyState>3&&!n.resolved&&(n.resolved=!0,a.emit("xhr-resolved",[],e));try{f.inPlace(e,p,"fn-",o)}catch(r){}}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").get("xhr"),s=t(5),c=t(16),f=c(a),u=c(s),d=NREUM.o,l=d.XHR,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout","onreadystatechange"];e.exports=a,window.XMLHttpRequest=function(t){var e=new l(t);try{a.emit("new-xhr",[e],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",r,!1)}catch(n){try{a.emit("internal-error",[n])}catch(i){}}return e},i(l,XMLHttpRequest),XMLHttpRequest.prototype=l.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(11),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(13),m=window.XMLHttpRequest;s.features.xhr=!0,t(5),t(9),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(14),a=t(15);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],14:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],15:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],16:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(15),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return w}function i(){return new r}var a="nr@context",s=t("gos"),c=t(14),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(14),f=window,u=f.document;NREUM.o={ST:setTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var d=(""+location).split("?")[0],l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-892.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,10,4,3]);
+  </script>
+  <title>
+   Sr. QA Engineer | Built In Chicago
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <!-- BEGIN Pre-requisites for Google Signup. See more at google_social module. -->
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript">
+   </script>
+   <script async="" defer="" src="https://apis.google.com/js/client:platform.js?onload=start" type="text/javascript">
+   </script>
+   <!-- END Pre-requisites -->
+   <!-- Continuing the <head> section -->
+   <script>
+    function start() {
+        gapi.load('auth2', function() {
+          auth2 = gapi.auth2.init({
+            client_id: '225472735537-40s89165o93dqprdccfmia56a0kjeeu7.apps.googleusercontent.com'
+            // Scopes to request in addition to 'profile' and 'email'
+            // scope: 'additional_scope'
+          });
+        });
+      }
+   </script>
+   <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+   <script type="text/javascript">
+    var _sf_startpt=(new Date()).getTime()
+   </script>
+   <meta content="on" http-equiv="x-dns-prefetch-control"/>
+   <link href="//js.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <link href="//css.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <link href="//media.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <link href="//media2.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <link href="//media3.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <link href="//media4.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <link href="//media5.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <meta content="Sr. QA Engineer" property="og:title"/>
+   <meta content="Mediafly is looking for an awesome Senior QA Engineer to join us in building the perfect selling experience across our suite of web, mobile, and tablet apps.Who are we?Mediafly is a high-growth, fast-" property="og:description"/>
+   <meta content="http://media5.cdn.builtinchicago.org/sites/default/files/imagecache/opengraph/sites/all/themes/bic/res/img/opengraph_default_image.png" property="og:image"/>
+   <meta content="website" property="og:type"/>
+   <meta content="http://www.builtinchicago.org/job/sr-qa-engineer" property="og:url"/>
+   <meta content="Built In Chicago" property="og:site_name"/>
+   <meta content="unavailable_after: 30-Apr-2016 12:01:28 CDT" name="googlebot"/>
+   <link href="http://media2.cdn.builtinchicago.org/sites/all/themes/bic/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+   <link href="http://www.builtinchicago.org/job/sr-qa-engineer" rel="canonical"/>
+   <meta content="1 day" name="revisit-after"/>
+   <script async="" src="//fast.fonts.net/jsapi/dc2948c4-cb80-4ab3-b5e7-d242504a2b45.js" type="text/javascript">
+   </script>
+   <meta content="369946383023044" property="fb:app_id"/>
+   <link href="http://www.builtinchicago.org/sites/all/themes/bic/res/img/opengraph_default_image.png" rel="image_src"/>
+   <!-- CSS aggregated by CDN module. -->
+   <link href="http://css.cdn.builtinchicago.org/sites/default/files/css/cdn_css_http_800e2a30c71531c137c322122e4c748a.css" media="all" rel="stylesheet" type="text/css"/>
+   <link href="http://css.cdn.builtinchicago.org/sites/default/files/css/cdn_css_http_75979f9eb4da2423064f621a0b48a7b3.css" media="print" rel="stylesheet" type="text/css"/>
+   <!-- CSS aggregated by CDN module. -->
+   <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-18910776-1", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+   </script>
+  </meta>
+ </head>
+ <body class="page not-front not-logged-in node-type-job no-sidebars page-job-sr-qa-engineer section-job site-chicago">
+  <div id="pseudo-overlay-div">
+  </div>
+  <div class="navbar navbar-inverse navbar-fixed-top" id="user-bar">
+   <div class="navbar-inner">
+    <div class="container">
+     <a class="logo brand" href="/" rel="home" title="Home">
+      <span class="aligner">
+      </span>
+      <img alt="" src="http://media3.cdn.builtinchicago.org/sites/all/themes/bic/res/img/logo-white-anon-chicago.png"/>
+     </a>
+     <div class="nav-collapse collapse">
+      <div class="region region-user-navigation">
+       <div class="block block-bix_user_nav user_navigation clearfix" id="block-bix_user_nav-bix_user_nav">
+        <div class="content">
+         <ul class="menu nav user-menu">
+          <li class="first" role="presentation">
+           <a class="loggedout-menuitem menuitem-2" href="/blogs" role="menuitem" title="NEWS">
+            NEWS
+           </a>
+          </li>
+          <li role="presentation">
+           <a class="loggedout-menuitem menuitem-3" href="/events" role="menuitem" title="EVENTS">
+            EVENTS
+           </a>
+           <div class="item-list">
+            <ul role="presentation">
+             <li class="first last">
+              <a href="/built-brews">
+               Built In Brews
+              </a>
+             </li>
+            </ul>
+           </div>
+          </li>
+          <li role="presentation">
+           <a class="loggedout-menuitem menuitem-4" href="/companies" role="menuitem" title="STARTUPS">
+            STARTUPS
+           </a>
+          </li>
+          <li class="last" role="presentation">
+           <a class="loggedout-menuitemmenuitem-1" href="/jobs" role="menuitem" title="JOBS">
+            JOBS
+           </a>
+           <div class="item-list">
+            <ul role="presentation">
+             <li class="first">
+              <a class="ctools-use-modal add-job ctools-modal-modal-popup-signin" href="/modal_forms/nojs/login?destination=manage-jobs" title="">
+               <span class="icon">
+               </span>
+               Post a Job
+              </a>
+             </li>
+             <li class="last">
+              <a class="loggedout-menuitem menuitem-2" href="/jobs" role="menuitem" title="View all jobs">
+               View all jobs
+              </a>
+             </li>
+            </ul>
+           </div>
+          </li>
+         </ul>
+         <a class="post-job-top-menu" href="/jobs/why-are-we-different" role="menuitem">
+          Post a Job
+         </a>
+         <div class="menu-header-leftwrap">
+          <div class="pull-left search-block-top">
+           <a class="trigger-search" href="/%2523" role="menuitem">
+            <span class="search-home-icon">
+            </span>
+            SEARCH
+           </a>
+           <div class="search-box-air hide">
+            <form accept-charset="UTF-8" action="/search/site" id="search-block-form" method="post">
+             <div class="form-inner">
+              <div class="container-inline">
+               <div class="form-text" id="edit-search-block-form-1-wrapper" placeholder="Search" title="Enter the terms you wish to search for.">
+                <input class="form-text" id="edit-search-block-form-1" maxlength="128" name="search_block_form" placeholder="Search" size="15" title="Enter the terms you wish to search for." type="text" value=""/>
+               </div>
+               <button class="form-submit hide-submit-exclude" id="edit-submit" name="op" type="submit" value="Search">
+                Search
+               </button>
+               <input id="form-uef_GRTH-yr_eyLOciuKK9HHBFl02BQd7nmT1-gSfag" name="form_build_id" type="hidden" value="form-uef_GRTH-yr_eyLOciuKK9HHBFl02BQd7nmT1-gSfag"/>
+               <input id="edit-search-block-form" name="form_id" type="hidden" value="search_block_form"/>
+              </div>
+             </div>
+            </form>
+           </div>
+          </div>
+          <ul class="menu nav signupin-menu pull-right">
+           <li class="half-line first">
+            <span class="aligner">
+            </span>
+            <a class="ctools-use-modal ctools-modal-modal-popup-custom-login" data-ga-event="sign up button: nav bar" href="/modal_forms/nojs/register/popup?destination=esi%2Fblock%2Fbic%3Auser_navigation%3Abix_user_nav%3Abix_user_nav%2FCACHE%3DUSER">
+             <span class="icon">
+             </span>
+             <span class="dropdown-icon bix-icon-signup">
+             </span>
+             sign up
+            </a>
+           </li>
+           <li class="half-line last">
+            <span class="aligner">
+            </span>
+            <a class="ctools-use-modal ctools-modal-modal-popup-custom-login" href="/modal_forms/nojs/login/popup" title="">
+             <span class="icon">
+             </span>
+             log in
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- /.region -->
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="navbar navbar-inverse navbar-fixed-top" id="navigation">
+   <div class="navbar-inner">
+    <div class="container">
+    </div>
+   </div>
+  </div>
+  <!-- /.section, /#navigation -->
+  <div id="page-wrapper">
+   <div class="clearfix" id="page">
+    <div id="main-wrapper">
+     <div id="header" style="display: none">
+      <div class="section clearfix">
+       <div class="header-left">
+        <a href="/" id="logo" rel="home" title="Home">
+         <img alt="Home" src="http://media4.cdn.builtinchicago.org/sites/all/themes/bic/logo.png"/>
+        </a>
+       </div>
+       <div class="header-right">
+       </div>
+      </div>
+     </div>
+     <!-- /.section, /#header -->
+     <div id="highlight">
+      <div class="section clearfix">
+      </div>
+     </div>
+     <div class="column" id="content">
+      <div class="section">
+       <div class="content-region" id="content-area">
+        <div class="container nj-job-container">
+         <div class="row">
+          <div class="span12">
+           <div class="nj-job-info-block">
+            <div class="row">
+             <div class="nj-span-left">
+              <div class="nc-company-sliders">
+               <ul class="bxslider">
+                <li>
+                 <img src="http://media5.cdn.builtinchicago.org/sites/default/files/imagecache/company-slider-v2/tw_cover_1500x500_final-710706-edited_0.jpg"/>
+                </li>
+               </ul>
+              </div>
+             </div>
+             <div class="nj-span-right">
+              <div class="nc-company-desc">
+               <div class="nc-company-desc-text">
+                <div class="text-center">
+                 <a class="logo-img" href="/company/mediafly">
+                  <img src="http://media.cdn.builtinchicago.org/sites/default/files/imagecache/companies_small/company_logos/mediaflymarkscreen-small.png"/>
+                 </a>
+                </div>
+               </div>
+               <div class="nc-content-box-in">
+                <p>
+                 Mediafly is The Customer Interaction Platform. Helping companies deliver the perfect in-person selling experience.
+                </p>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="span12">
+          <div class="row">
+           <div class="job-top-content-wrapper ">
+            <div class="job-top-title-wrapper">
+             <span class="nj-job-title">
+              Sr. QA Engineer
+             </span>
+             <span class="nj-company-title">
+              at
+              <span class="nc-fallback-title">
+               <a href="/company/mediafly">
+                Mediafly
+               </a>
+              </span>
+             </span>
+            </div>
+            <div class="job-top-detail-wrapper">
+             <div class="nj-job-city-wrapper">
+              <span class="citymarker-icon">
+              </span>
+              <span class="nj-job-city">
+               Chicago
+              </span>
+             </div>
+             <div class="nj-job-company-profile-wrapper">
+              <span class="company-follow-icon">
+              </span>
+              <span class="nj-job-company-profile">
+               <a bix-click-campaign="follow-company-from-job" class="ctools-use-modal job-alert-button" data-ga-event="Job Alert Follow" href="/modal_forms/nojs/46270/job-alert" nid="128487">
+                Follow Company
+               </a>
+              </span>
+             </div>
+             <div class="nj-save-job-wrapper">
+              <span class="nj-save-job">
+               <span class="star-marker-icon" id="star-marker-icon">
+               </span>
+               <a class="ctools-use-modal ctools-modal-modal-popup-custom-login" href="/modal_forms/nojs/login/popup" title="">
+                <span class="icon">
+                </span>
+                Save Job
+               </a>
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<div class="nj-company-website-wrapper">
+ <span class="websitemarker-icon">
+ </span>
+ <span class="nj-company-website">
+  <a 0='s:21:"s:13:"s:6:"a:0:{}";";";' href="http://www.mediafly.com" rel="nofollow" target="_blank">
+   Visit their site
+  </a>
+ </span>
+</div>
+<!-- Top content wrapper end -->
+<div class="nj-span-left-content ">
+ <div class="job-top-header-wrapper">
+  <span class="nj-job-body">
+   <p>
+    Mediafly is looking for an awesome Senior QA Engineer to join us in building the perfect selling experience across our suite of web, mobile, and tablet apps.
+   </p>
+   <p>
+    <b>
+     Who are we?
+    </b>
+   </p>
+   <p>
+    Mediafly is a high-growth, fast-paced software-as-a-service company that helps enterprises turn their content and data into compelling mobile experiences. Our products tie web-based content management with native, fully branded mobile and tablet apps.
+   </p>
+   <p>
+    We have a lean, growing team of passionate engineers and professionals that love to build great products and solve big problems. Our team is highly collaborative and a lot of fun. The best ideas, design and implementation win. We love to design, build, ship, and improve our products to make our customers’ lives better every day. Find out more at
+    <a href="http://www.mediafly.com">
+     www.mediafly.com
+    </a>
+    .
+   </p>
+   <p>
+    <b>
+     Responsibilities
+    </b>
+   </p>
+   <p>
+    You’re a fantastic QA engineer who can structure automated test suites to ensure Mediafly is delivering the best possible experience to our users. You know how to build up QA from scratch with best-of-breed processes and engineering. You’re looking to innovate QA as a discipline in ways that others have not before.
+   </p>
+   <p>
+    We want to work with someone who:
+   </p>
+   <p>
+    <ul>
+     <li>
+      Creates and builds upon a world-class automated testing framework for functional, integration, regression, performance, and system tests
+      <br/>
+     </li>
+     <li>
+      Is fluent with open-source frameworks and tools like Selenium Webdriver, Appium, Jasmine/Mocha, and Jenkins
+      <br/>
+     </li>
+     <li>
+      Can think about how to solve some of the hardest testing challenges out there (a wide range of mobile, desktop and web platforms, huge video, big data, and so much more)
+      <br/>
+     </li>
+     <li>
+      Believes in and pursues the melding of testing, automation, and monitoring systems
+      <br/>
+     </li>
+     <li>
+      Will participate actively with the engineering and product teams in planning, sprint, and deployment activities
+      <br/>
+     </li>
+     <li>
+      Will work closely with Customer Success and support to proactively identify issues quickly
+      <br/>
+     </li>
+     <li>
+      Looks to build highly repeatable processes that can grow with the team
+      <br/>
+     </li>
+     <li>
+      Considers themselves highly collaborative and highly self-driven
+      <br/>
+     </li>
+     <li>
+      Ping pong skills are a plus!
+      <br/>
+     </li>
+    </ul>
+   </p>
+   <p>
+    <b>
+     Compensation
+    </b>
+   </p>
+   <p>
+    Salary dependent upon level of experience. Packages include generous benefits (health, dental, paid time off, retirement, and stock options).
+   </p>
+   <p>
+    <b>
+     Details and Contact Information
+    </b>
+   </p>
+   <p>
+    This position is located at our beautiful headquarters on Michigan Avenue, in the River North district of Chicago. Interested? We want to hear from you! Email
+    <a href="mailto:jobs@mediafly.com">
+     jobs@mediafly.com
+    </a>
+    to learn more.
+   </p>
+   <p>
+    Thanks, and we look forward to hearing from you!
+   </p>
+  </span>
+  <div class="nj-job-applynow">
+   <span class="how-to-apply-placeholder">
+   </span>
+   <a bix-click-campaign="apply-now-button" class="applynow-button" data-ga-page="/goals/job-how-to-apply" href="#" id="apply-now-button" job_mapped_category="0" nid="128487">
+    Apply now
+   </a>
+   <span class="nj-how-to-apply" id="nj-how-to-apply">
+    <label class="how-to-apply-label">
+     How to apply:
+    </label>
+    <span class="field-how-to-apply">
+     Email jobs@mediafly.com to learn more.
+    </span>
+   </span>
+  </div>
+  <div class="nj-job-savejob-wrapper">
+   <div class="save-job-container">
+    <span class="save-job-placeholder" id="save-job-placeholder">
+    </span>
+    <span class="flag-save-job">
+     <a class="ctools-use-modal ctools-modal-modal-popup-custom-login" href="/modal_forms/nojs/login/popup" title="">
+      <span class="icon">
+      </span>
+      Save Job
+     </a>
+    </span>
+   </div>
+   <div class="send-email-container">
+    <span class="email-job-placeholder">
+    </span>
+    <a class="ctools-use-modal ctools-modal-modal-popup-medium email-job-link" href="/bic_modal/nojs/jobs_forward?path=node/128487" title="Email this job">
+     <span class="icon">
+     </span>
+     Email
+    </a>
+   </div>
+  </div>
+ </div>
+ <div class="job-bottom-content-wrapper">
+ </div>
+ <span class="nj-job-find-more">
+  <a href="/jobs">
+   Find more startup and tech jobs in Chicago
+  </a>
+  <span class="arrow-right-blue">
+  </span>
+ </span>
+</div>
+<div class="nj-span-right-content">
+ <a bix-click-campaign="apply-now-button" class="sidebar-apply-now" data-ga-event="Apply now web" href="#" id="apply-now-button" job_mapped_category="0" nid="128487">
+  Apply now
+ </a>
+ <div class="how-to-wrapper">
+  <div class="how-to-label">
+   How to apply
+  </div>
+  <div class="sidebar-how-to">
+   Email jobs@mediafly.com to learn more.
+  </div>
+ </div>
+ <div class="views_view view view-jobs view-id-jobs view-display-id-job_sidebar_company_detail view-dom-id-30dc363d67d1bcb17b506967d2e5264c">
+  <div class="view-content">
+   <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    <div class="views-field views-field-field-why-work-us-value">
+     <span class="views-label views-label-field-why-work-us-value">
+      Why work with us
+     </span>
+     <span class="plus-placeholder">
+     </span>
+     <!--* This is placed in tpl file -->
+     <div class="field-content">
+      At Mediafly, our employees are given the tools they need to be creative, to grow, and to push their ideas to the limit. Our core belief is that any employee has the ability to challenge the status quo, no matter if they are an executive or intern. The best ideas should be stated, no matter how popular or unpopular they may be.
+     </div>
+    </div>
+    <div class="views-field views-field-field-company-culture-value">
+     <span class="views-label views-label-field-company-culture-value">
+      Culture
+     </span>
+     <span class="plus-placeholder">
+     </span>
+     <!--* This is placed in tpl file -->
+     <div class="field-content">
+      Compassion and passion are two key ingredients in the Mediafly DNA. Our compassion for our employees and customers, and our passion for our technology has allowed us push innovation and creativity throughout our organization.
+     </div>
+    </div>
+    <div class="views-field views-field-field-perks-benifits-value">
+     <span class="views-label views-label-field-perks-benifits-value">
+      Perks &amp; Benefits
+     </span>
+     <span class="plus-placeholder">
+     </span>
+     <!--* This is placed in tpl file -->
+     <div class="field-content">
+      <div class="field-item field-item-0">
+       Competitive pay, stock options, and benefits like health, dental, generous paid time off, and retirement plans with matching.
+      </div>
+      <div class="field-item field-item-1">
+       Casual dress code. Come to work in jeans and a t-shirt or a three-piece suit - whatever is comfortable for you!
+      </div>
+      <div class="field-item field-item-2">
+       Conveniently located in downtown Chicago, close to public transport as well as a bunch of great lunch spots.
+      </div>
+      <div class="field-item field-item-3">
+       Free food. From breakfast, to lunch, to snacks—we never let our employees go thirsty or hungry.
+      </div>
+      <div class="field-item field-item-4">
+       Open office. The lack of cubicles allows for inspired collaboration, witty banter, and occasionally some awkward eye contact.
+      </div>
+      <div class="field-item field-item-5">
+       Ping Pong room! Need we say more?
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- /.view -->
+</div>
+<!-- /container -->
+<!-- /.section, /#content -->
+<!-- /#main, /#main-wrapper -->
+<div class="clearfix" id="footer">
+</div>
+<!-- /.section, /#footer -->
+<!-- /#page, /#page-wrapper -->
+<div class="footer-wrapper">
+ <div class="footer-content-wrapper">
+  <div class="footer-social-links">
+   <div class="item-list">
+    <ul class="round-social-links">
+     <li class="social-links social-linkedin first">
+      <a class="bix-icon-round-linkedin" href="http://www.linkedin.com/company/2345366" target="_blank">
+       Follow on LinkedIn
+      </a>
+     </li>
+     <li class="social-links social-facebook">
+      <a class="bix-icon-round-facebook" href="http://facebook.com/BuiltInChicago" target="_blank">
+       Like on Facebook
+      </a>
+     </li>
+     <li class="social-links social-twitter last">
+      <a class="bix-icon-round-twitter" href="http://twitter.com/builtinchicago" target="_blank">
+       Follow on Twitter
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div id="footer_menu">
+   <div class="footer-menu-block">
+    <div class="footer-menu-title">
+     Contact
+    </div>
+    <div class="item-list">
+     <ul class="footer_left">
+      <li class="first">
+       <a href="/premium/membership" rel="nofollow">
+        Premium Talent Solutions
+       </a>
+      </li>
+      <li>
+       <a href="/send-us-a-tip" rel="nofollow">
+        Send Us a Tip
+       </a>
+      </li>
+      <li>
+       <a href="/contact-us" rel="nofollow">
+        General Inquiries
+       </a>
+      </li>
+      <li class="last">
+       <a href="/sponsors" rel="nofollow">
+        Become a Sponsor
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="footer-menu-block">
+    <div class="footer-menu-title">
+     About
+    </div>
+    <div class="item-list">
+     <ul class="footer_middle">
+      <li class="first">
+       <a href="/our-team" rel="nofollow">
+        Our Team
+       </a>
+      </li>
+      <li>
+       <a href="/investors" rel="nofollow">
+        Our Investors
+       </a>
+      </li>
+      <li>
+       <a href="/terms-use" rel="nofollow">
+        Terms of Use
+       </a>
+      </li>
+      <li class="last">
+       <a href="/privacy-policy" rel="nofollow">
+        Privacy Policy
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="footer-menu-block last">
+    <div class="footer-menu-title footer-copyright-title">
+     Powered By
+    </div>
+    <div class="item-list">
+     <ul class="footer_right">
+      <li class="first">
+       <a href="http://www.builtinaustin.com/jobs">
+        Built In Austin
+       </a>
+      </li>
+      <li>
+       <a href="http://www.builtinchicago.org/jobs">
+        Built In Chicago
+       </a>
+      </li>
+      <li>
+       <a href="http://www.builtincolorado.com/jobs">
+        Built In Colorado
+       </a>
+      </li>
+      <li>
+       <a href="http://www.builtinla.com/jobs">
+        Built In LA
+       </a>
+      </li>
+      <li class="last">
+       <a href="http://www.builtinnyc.com/jobs">
+        Built In NYC
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<div class="colorbox-inline-content" id="jobs-out-of-credit">
+ <h2>
+  Oh no!
+ </h2>
+ <p>
+  You're fresh out of job post slots.
+ </p>
+ <a class="out-of-jobs-upgrade" href="/jobs/upgrade-plan">
+  Upgrade your plan
+ </a>
+ <a class="out-of-jobs-dashboard" href="/jobs/myjobsposts">
+  manage current jobs
+ </a>
+</div>
+<div class="clearfix new-signup-box" id="registration-form">
+ <div class="column registration-intro">
+  <div class="logo">
+   <div class="text-center">
+    <img alt="logo" src="http://media3.cdn.builtinchicago.org/sites/all/themes/bic/res/img/new_logo-chicago.png"/>
+   </div>
+  </div>
+  <h2>
+   Create an account
+  </h2>
+  <div class="item-list">
+   <ul>
+    <li class="social-signin facebook-connect first last">
+     <div class="social-links">
+      <div class="social-link facebook">
+       Facebook
+      </div>
+      <a class="facebook-action-connect action-link" href="https://www.facebook.com/dialog/oauth?client_id=369946383023044&amp;redirect_uri=http%3A%2F%2Fwww.builtinchicago.org%2Ffboauth%2Fconnect&amp;scope=email%2Cemail&amp;state=direct-node_none">
+       connect with Facebook
+      </a>
+     </div>
+    </li>
+   </ul>
+  </div>
+ </div>
+</div>
+<div id="job-view-registration">
+ <div class="job-view-header">
+  <h2>
+   Let startups find you
+  </h2>
+  <p>
+   Create a profile and upload your resume today.
+  </p>
+ </div>
+ <div class="job-view-social">
+  <div class="item-list">
+   <ul>
+    <li class="social-signin facebook-connect first last">
+     <div class="social-links">
+      <div class="social-link facebook">
+       Facebook
+      </div>
+      <a class="facebook-action-connect action-link" href="https://www.facebook.com/dialog/oauth?client_id=369946383023044&amp;redirect_uri=http%3A%2F%2Fwww.builtinchicago.org%2Ffboauth%2Fconnect&amp;scope=email%2Cemail&amp;state=direct-node_none">
+       connect with Facebook
+      </a>
+     </div>
+    </li>
+   </ul>
+  </div>
+ </div>
+</div>
+<div class="ajax-saved-job-icon">
+ <a class="user-icons icon-star" data-original-title="Saved Jobs" href="#popover-save-jobs-content" title="">
+  Saved Jobs
+ </a>
+</div>
+<div class="popover-saved-jobs-wrapper element-hidden" id="popover-saved-jobs-wrapper">
+ <div class="popover-saved-jobs" id="popover-saved-jobs">
+  <span class="pin-icon">
+  </span>
+  <div class="saved-jobs-popup-title">
+   Job Saved
+  </div>
+  <div class="save-jobs-text">
+   Find your saved jobs by scrolling over this star
+  </div>
+  <button class="save-jobs-button">
+   Got it
+  </button>
+ </div>
+</div>
+<!--  
+  <!-- page_closure start -->
+<div class="region region-page-closure">
+ <div class="block block-bic_custom sitewide block-last clearfix" id="block-bic_custom-bix_custom_invite">
+  <div class="content">
+   <div class="bix-invite-section">
+    <div class="bix-invite-section-close">
+    </div>
+    <div class="bix-invite-section-title">
+     Invite Your Contacts to Built In Chicago
+    </div>
+    <div class="bix-invite-section-body">
+     <div class="link-item gmail-invite-link">
+      <div class="link-item-img">
+       <img src="http://media5.cdn.builtinchicago.org/sites/all/themes/bic/res/img/invite-gmail-icon.png"/>
+      </div>
+      <a href="https://accounts.google.com/o/oauth2/auth?client_id=225722871618-ci5fn0cfr7hb5hdru7lie1b3tdeetkep.apps.googleusercontent.com&amp;redirect_uri=/initiate-gmail-invite&amp;scope=https://www.google.com/m8/feeds/&amp;response_type=code" rel="nofollow" target="_blank">
+       Invite Gmail Contacts
+      </a>
+     </div>
+     <div class="link-item facebook-invite-link">
+      <div class="link-item-img">
+       <img src="http://media.cdn.builtinchicago.org/sites/all/themes/bic/res/img/invite-facebook-icon.png"/>
+      </div>
+      <a href="https://www.facebook.com/dialog/send?app_id=369946383023044&amp;link=http://www.builtinchicago.org/invite/code/&amp;redirect_uri=http://www.builtinchicago.org/job/sr-qa-engineer" rel="nofollow" target="_blank">
+       Invite Facebook contact
+      </a>
+     </div>
+     <div class="link-item twitter-invite-link">
+      <div class="link-item-img">
+       <img src="http://media5.cdn.builtinchicago.org/sites/all/themes/bic/res/img/invite-twitter-icon.png"/>
+      </div>
+      <a href="https://twitter.com/share?url=http://www.builtinchicago.org/invite/code/&amp;counturl=http://www.builtinchicago.org/invite/code/&amp;via=BuiltInChicago&amp;text=Join Me on Built In Chicago" target="_blank">
+       Share link on Twitter
+      </a>
+     </div>
+     <div class="clear">
+     </div>
+    </div>
+   </div>
+   <div class="bix-invite-section-fade">
+   </div>
+  </div>
+ </div>
+</div>
+<!-- /.region -->
+<!-- page_closure -->
+<script src="http://js.cdn.builtinchicago.org/sites/default/files/js/js_6ce084e074d28ab03787d6854852b2c6.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+ <!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","chartbeat":{"uid":27843,"domain":"www.builtinchicago.org"},"colorbox":{"transition":"elastic","speed":350,"opacity":0.75,"slideshow":false,"slideshowAuto":false,"slideshowSpeed":2500,"slideshowStart":"","slideshowStop":"","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","overlayClose":true,"maxWidth":"100%","maxHeight":"100%","className":"dummycl"},"googleAnalyticsReportsAjaxUrl":"\/google-analytics-reports\/ajax","modal-popup-small":{"modalSize":{"type":"fixed","width":300,"height":300},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e","closeText":"Close"},"modal-popup-medium":{"modalSize":{"type":"fixed","width":550,"height":450},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e","closeText":"Close"},"modal-popup-large":{"modalSize":{"type":"scale","width":0.8,"height":0.8},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e","closeText":"Close"},"CToolsModal":{"loadingText":"Loading...","closeText":"Close Window","closeImage":"\u003cimg src=\"http:\/\/media5.cdn.builtinchicago.org\/sites\/all\/modules\/ctools\/images\/icon-close-window.png\" alt=\"Close window\" title=\"Close window\" width=\"16\" height=\"16\" \/\u003e","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/ctools\/images\/throbber.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e"},"user_relationships_ui":{"loadingimage":"\/sites\/all\/modules\/user_relationships\/user_relationships_ui\/images\/loadingAnimation.gif","savingimage":"\/sites\/all\/modules\/user_relationships\/user_relationships_ui\/images\/savingimage.gif","position":{"position":"fixed","left":".35","top":".3"}},"hide_submit":{"selector":"input:submit:not(.hide-submit-exclude)","mode":"hide","keypress":"1","dbg":false,"message":"\u003cp class=\"hide_submit\"\u003e\u003cimg src=\"http:\/\/media4.cdn.builtinchicago.org\/sites\/all\/modules\/hide_submit\/images\/loader.gif\" alt=\"\" title=\"\" \/\u003e\u0026nbsp; Please wait... \u003c\/p\u003e","image":"http:\/\/media4.cdn.builtinchicago.org\/sites\/all\/modules\/hide_submit\/images\/loader.gif"},"bic_jobs":{"developer_tid":"78"},"bic_custom":{"isMobile":false},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"CToolsUrlIsAjaxTrusted":{"\/search\/site":true},"select2":{"local":[],"attach":[]},"bic_jobs_nid":"128487","nid":"128487","bix":{"city":"Chicago","siteName":"Built In Chicago","facebook_appid":"369946383023044","twitter_handler":"BuiltInChicago"},"custom_page_bg":"http:\/\/www.builtinchicago.org\/sites\/all\/themes\/bic\/res\/img\/bg-page.jpg","cookieDomain":".builtinchicago.org","use_janrain_logins":false,"modal-popup-signin":{"modalSize":{"type":"dynamic","width":379,"height":460},"modalOptions":{"opacity":0.75,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsSignIn","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e","closeText":"Close"},"modal-popup-signup":{"modalSize":{"type":"dynamic","width":758,"height":397},"modalOptions":{"opacity":0.75,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsSignUp","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e","closeText":"Close"},"modal-popup-custom-login":{"modalSize":{"type":"dynamic","width":820,"height":500},"modalOptions":{"opacity":0.97,"background":"#fff"},"modalTheme":"ModalFormsCustomSignIn","animation":"fadeIn","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e","closeText":"Close","loadingText":"Yo Yo","closeImage":"\u003cimg src=\"http:\/\/media5.cdn.builtinchicago.org\/sites\/all\/modules\/ctools\/images\/icon-close-window.png\" alt=\"Close\" title=\"Close\" width=\"16\" height=\"16\" \/\u003e"}});
+//--><!]]>
+</script>
+<!-- facebook -->
+<div id="fb-root">
+</div>
+<!--
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  -->
+<!-- twitter -->
+<!--
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  -->
+<!-- Google+ -->
+<!--
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+  -->
+<!-- closure -->
+<script type="text/javascript">
+ var _sf_async_config=Drupal.settings.chartbeat;
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+         (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+         "static.chartbeat.com/js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<div class="user_relationships_ui_popup_form" id="user_relationships_popup_form">
+</div>
+<script src="http://js.cdn.builtinchicago.org/sites/default/files/js/js_e2f7f23df959f3a0c43eb120cb3a109f.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+ <!--//--><![CDATA[//><!--
+
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName('script')[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/8062.js";
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+      
+//--><!]]>
+</script>
+<script type="text/javascript">
+ <!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"CToolsAJAX":{"scripts":{"\/sites\/all\/modules\/jquery_update\/replace\/jquery\/1.3\/jquery.min.js":true,"\/misc\/drupal.js":true,"\/sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":true,"\/sites\/all\/modules\/colorbox\/js\/colorbox.js":true,"\/sites\/all\/modules\/colorbox\/js\/colorbox_load.js":true,"\/sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":true,"\/sites\/all\/modules\/custom\/bix_autocomplete\/autocomplete.js":true,"\/sites\/all\/modules\/jquery_update\/replace\/jquery.form.js":true,"\/sites\/all\/modules\/ctools\/js\/ajax-responder.js":true,"\/sites\/all\/modules\/ctools\/js\/modal.js":true,"\/sites\/all\/modules\/modal_forms\/js\/modal_forms_popup.js":true,"\/sites\/all\/modules\/panels\/js\/panels.js":true,"\/sites\/all\/modules\/ubercart\/uc_roles\/uc_roles.js":true,"\/sites\/all\/modules\/user_relationships\/user_relationships_ui\/user_relationships_ui.js":true,"\/sites\/all\/modules\/hide_submit\/hide_submit.js":true,"\/sites\/all\/modules\/custom\/bic_custom\/js\/bic_custom_linkedin_broke.js":true,"\/sites\/all\/modules\/bic_section_companies\/js\/companies-node.js":true,"\/sites\/all\/modules\/google_analytics\/googleanalytics.js":true,"\/sites\/all\/modules\/custom\/google_social\/js\/google_social.js":true,"\/sites\/all\/modules\/custom\/select2\/select2.js":true,"\/sites\/all\/modules\/bic_jobs\/bic_jobs_record.js":true,"\/sites\/all\/themes\/bic\/res\/js\/jquery.bxslider.js":true,"\/sites\/all\/modules\/custom\/bic_custom\/bic_custom.js":true,"\/sites\/all\/themes\/bic\/res\/js\/jquery.validate.min.js":true,"\/sites\/all\/modules\/custom\/user_relationships_ui_ajax\/user_relationships_ui_ajax.js":true,"\/sites\/all\/modules\/google_analytics_reports\/google_analytics_reports\/google_analytics_reports.js":true},"css":{"\/modules\/node\/node.css":true,"\/modules\/system\/defaults.css":true,"\/modules\/system\/system.css":true,"\/modules\/system\/system-menus.css":true,"\/modules\/user\/user.css":true,"\/sites\/all\/modules\/cck\/theme\/content-module.css":true,"\/sites\/all\/modules\/ctools\/css\/ctools.css":true,"\/sites\/all\/modules\/date\/date.css":true,"\/sites\/all\/modules\/date\/date_popup\/themes\/datepicker.css":true,"\/sites\/all\/modules\/date\/date_popup\/themes\/jquery.timeentry.css":true,"\/sites\/all\/modules\/filefield\/filefield.css":true,"\/sites\/all\/modules\/google_analytics_reports\/google_analytics_reports\/google_analytics_reports.css":true,"\/sites\/all\/modules\/linkedin\/linkedin_auth\/linkedin_auth.css":true,"\/sites\/all\/modules\/ctools\/css\/modal.css":true,"\/sites\/all\/modules\/panels\/css\/panels.css":true,"\/sites\/all\/modules\/tagadelic\/tagadelic.css":true,"\/sites\/all\/modules\/ubercart\/uc_order\/uc_order.css":true,"\/sites\/all\/modules\/ubercart\/uc_product\/uc_product.css":true,"\/sites\/all\/modules\/ubercart\/uc_roles\/uc_roles.css":true,"\/sites\/all\/modules\/ubercart\/uc_store\/uc_store.css":true,"\/sites\/all\/modules\/user_relationships\/user_relationships_ui\/user_relationships_ui.css":true,"\/sites\/all\/modules\/video_filter\/video_filter.css":true,"\/misc\/farbtastic\/farbtastic.css":true,"\/sites\/all\/modules\/calendar\/calendar.css":true,"\/sites\/all\/modules\/cck\/modules\/fieldgroup\/fieldgroup.css":true,"\/sites\/all\/modules\/views\/css\/views.css":true,"\/modules\/comment\/comment.css":true,"\/sites\/all\/themes\/bic\/res\/css\/normalize.css":true,"\/sites\/all\/themes\/bic\/res\/css\/forms.css":true,"\/sites\/all\/themes\/bic\/res\/css\/formalize.css":true,"\/sites\/all\/themes\/bic\/res\/css\/colorbox.css":true,"\/sites\/all\/themes\/bic\/res\/css\/modal_forms_popup.css":true,"\/sites\/all\/themes\/bic\/res\/css\/font-awesome.min.css":true,"\/sites\/all\/themes\/bic\/res\/css\/style.css":true,"\/sites\/all\/themes\/bic\/res\/css\/bic.css":true,"\/sites\/all\/themes\/bic\/res\/css\/front.css":true,"\/sites\/all\/themes\/bic\/res\/css\/landing.css":true,"\/sites\/all\/themes\/bic\/res\/css\/anythingslider.css":true,"\/sites\/all\/themes\/bic\/res\/css\/bic_ubercart.css":true,"\/sites\/all\/themes\/bic\/res\/css\/toggle.css":true,"\/sites\/all\/themes\/bic\/res\/css\/jquery.bxslider.css":true,"\/sites\/all\/modules\/bic_section_companies\/css\/companies.css":true,"\/sites\/all\/themes\/bic\/res\/css\/print.css":true}}});
+//--><!]]>
+</script>
+<!-- Invite section -->
+<div class="bix-upgrade-section text-center">
+ <div class="bix-upgrade-section-close">
+ </div>
+ <div class="bix-upgrade-section-body">
+  <div id="jobs-out-of-credit">
+   <h2>
+    Oh no!
+   </h2>
+   <p>
+    You're fresh out of job post slots.
+   </p>
+   <a class="out-of-jobs-upgrade" href="/jobs/upgrade-plan">
+    <img src="http://media.cdn.builtinchicago.org/upgrade-your-plan.png"/>
+   </a>
+   <a class="out-of-jobs-dashboard" href="/jobs/myjobsposts">
+    <img src="http://media3.cdn.builtinchicago.org/manage-current-jobs.png"/>
+   </a>
+  </div>
+  <div class="clear">
+  </div>
+ </div>
+</div>
+<div class="bix-upgrade-section-fade">
+</div>
+<!-- Contact Us section -->
+<script type="text/javascript">
+ window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1490ac5bd8","applicationID":"2228495","transactionName":"YFABN0RRWkZZVxEKX1kaIgBCWVtbF1YMG29ZWgcGaUBVUl1rEwpVQGoAAlpcVlRbXw==","queueTime":0,"applicationTime":1925,"atts":"TBcCQQxLSUg=","errorBeacon":"bam.nr-data.net","agent":""}
+</script>

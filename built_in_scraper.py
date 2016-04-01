@@ -36,3 +36,6 @@ def scrape():
     paths = get_paths()
     pages = map(bip, paths)
     return pages
+
+if __name__ == '__main__':
+    scrape()
