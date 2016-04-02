@@ -49,7 +49,7 @@ class BuiltInPage:
         headers = Set()
         for b in bolds: headers.add(headerify(b.text))
         for s in strongs: headers.add(headerify(s.text))
-        return headers
+        return map(lambda h: re.sub(self.company, 'company', h), headers)
 
 
 

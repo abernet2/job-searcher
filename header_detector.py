@@ -6,6 +6,7 @@ import nltk.stem
 from nltk import decorators
 import random
 from built_in_page import BuiltInPage as bip
+import re
 
 CACHED_HEADERS = 'headers.txt'
 
@@ -49,14 +50,22 @@ def vectorspaced(header):
 
 if __name__ == '__main__':
 
-    file_name = 'example.txt'
 
-    f = open(file_name, 'r')
-    headers = [line.decode('UTF-8').strip() for line in f.readlines()]
-    words = get_words(headers)
+    pages = bip.all()
+    # featureset = [page.extract_headers() for page in pages]
+    print(pages[0].company)
+    results = pages[0].extract_headers()
+    
+    print(results)
+    # file_name = 'example.txt'
 
-    cluster = GAAClusterer(5)
-    print([vectorspaced(h) for h in headers if h])
+    # f = open(file_name, 'r')
+    # headers = [line.decode('UTF-8').strip() for line in f.readlines()]
+    # words = get_words(headers)
+    # print(words)
+
+    # cluster = GAAClusterer(5)
+    # print([vectorspaced(h) for h in headers if h])
     # cluster.cluster([vectorspaced(h) for h in headers if h])
 
     # classified = [cluster.classify(vectorspaced(h)) for h in headers]

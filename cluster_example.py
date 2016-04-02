@@ -11,7 +11,7 @@ import re
 stemmer_func = nltk.stem.snowball.EnglishStemmer().stem
 stopwords = set(nltk.corpus.stopwords.words('english'))
 
-LANGUAGES = set(['python', 'html/javascript'])
+LANGUAGES = set(['python', 'html/javascript', 'nosql', '.net'])
 
 @decorators.memoize
 def normalize_word(word):
