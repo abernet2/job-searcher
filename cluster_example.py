@@ -11,7 +11,9 @@ import re
 stemmer_func = nltk.stem.snowball.EnglishStemmer().stem
 stopwords = set(nltk.corpus.stopwords.words('english'))
 
-LANGUAGES = set(['python', 'html/javascript', 'nosql', '.net'])
+stopwords.union(set(['phew', 'lovely']))
+LANGUAGES = set(['python', 'html/javascript', 'nosql', 'net', 'mvc'])
+KEYWORDS = set(['about', 'h-1b'])
 
 @decorators.memoize
 def normalize_word(word):
@@ -36,7 +38,8 @@ def vectorspaced(title):
 
 def clean(line):
     line = line.decode('UTF-8').strip().lower()
-    return re.sub(r'\s+', r' ', line)
+    line = re.sub(r'\s+', r' ', line)
+    return re.sub(r'[.,]+', r'', line)
 
 def find_min_sim(word1, word2):
     ssets1 = [sset for sset in wn.synsets(word1)]
@@ -65,7 +68,7 @@ if __name__ == '__main__':
         words = get_words(list(job_titles))
 
         # cluster = KMeansClusterer(5, euclidean_distance)
-        cluster = GAAClusterer(22)
+        cluster = GAAClusterer(30)
         cluster.cluster([vectorspaced(title) for title in job_titles if title])
 
         # NOTE: This is inefficient, cluster.classify should really just be
@@ -77,3 +80,5 @@ if __name__ == '__main__':
         for cluster_id, title in sorted(zip(classified_examples, job_titles)):
             print cluster_id, title.encode('UTF-8')
         print(words)
+
+        print(find_min_sim('requirements', 'qualifications'))

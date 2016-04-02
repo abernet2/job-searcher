@@ -46,12 +46,16 @@ class BuiltInPage:
         soup = BeautifulSoup(self.post, 'html.parser')
         bolds = soup.find_all('b')
         strongs = soup.find_all('strong')
-        headers = Set()
+        headers = set()
         for b in bolds: headers.add(headerify(b.text))
         for s in strongs: headers.add(headerify(s.text))
-        return map(lambda h: re.sub(self.company, 'company', h), headers)
+        return set(map(lambda h: self.replace_company(self.replace_position(h)), headers))
 
+    def replace_company(self, h):
+        return re.sub(self.company.lower(), 'company', h.lower())
 
+    def replace_position(self, h):
+        return re.sub(self.position.lower(), 'position', h.lower())
 
     # takes a url and fetches if it has not already been chached
     # returns a soup object
@@ -84,6 +88,10 @@ def is_header(str):
     if str[-1] == ':': return True
     return False
 
+def clean(str):
+    str = re.sub(r'\s+', r' ', str.lower())
+    return re.sub(r'[.,]+', r'', str.lower())
+
 def headerify(str):
-    return str.strip().replace(':', '')
+    return clean(str.strip().replace(':', ''))
     

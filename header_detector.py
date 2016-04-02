@@ -50,14 +50,7 @@ def vectorspaced(header):
 
 if __name__ == '__main__':
 
-
-    pages = bip.all()
-    # featureset = [page.extract_headers() for page in pages]
-    print(pages[0].company)
-    results = pages[0].extract_headers()
-    
-    print(results)
-    # file_name = 'example.txt'
+    print_features_to_file()
 
     # f = open(file_name, 'r')
     # headers = [line.decode('UTF-8').strip() for line in f.readlines()]
