@@ -1,0 +1,1042 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html debug="true" dir="ltr" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Support Developer | Built In Chicago
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <!-- BEGIN Pre-requisites for Google Signup. See more at google_social module. -->
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript">
+   </script>
+   <script async="" defer="" src="https://apis.google.com/js/client:platform.js?onload=start" type="text/javascript">
+   </script>
+   <!-- END Pre-requisites -->
+   <!-- Continuing the <head> section -->
+   <script>
+    function start() {
+        gapi.load('auth2', function() {
+          auth2 = gapi.auth2.init({
+            client_id: '225472735537-40s89165o93dqprdccfmia56a0kjeeu7.apps.googleusercontent.com'
+            // Scopes to request in addition to 'profile' and 'email'
+            // scope: 'additional_scope'
+          });
+        });
+      }
+   </script>
+   <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+   <script type="text/javascript">
+    var _sf_startpt=(new Date()).getTime()
+   </script>
+   <meta content="on" http-equiv="x-dns-prefetch-control"/>
+   <link href="//js.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <link href="//css.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <link href="//media.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <link href="//media2.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <link href="//media3.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <link href="//media4.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <link href="//media5.cdn.builtinchicago.org" rel="dns-prefetch"/>
+   <meta content="Support Developer" property="og:title"/>
+   <meta content="               About Us:Braintree builds products that make payments easier—so easy that they fade into the background, making entirely new kinds of interactions possible. Interactions like seamlessly" property="og:description"/>
+   <meta content="http://media5.cdn.builtinchicago.org/sites/default/files/imagecache/opengraph/sites/all/themes/bic/res/img/opengraph_default_image.png" property="og:image"/>
+   <meta content="website" property="og:type"/>
+   <meta content="http://www.builtinchicago.org/job/support-developer-3" property="og:url"/>
+   <meta content="Built In Chicago" property="og:site_name"/>
+   <meta content="unavailable_after: 14-Apr-2016 10:22:04 CDT" name="googlebot"/>
+   <link href="http://media2.cdn.builtinchicago.org/sites/all/themes/bic/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+   <link href="http://www.builtinchicago.org/job/support-developer-3" rel="canonical"/>
+   <meta content="1 day" name="revisit-after"/>
+   <script async="" src="//fast.fonts.net/jsapi/dc2948c4-cb80-4ab3-b5e7-d242504a2b45.js" type="text/javascript">
+   </script>
+   <meta content="369946383023044" property="fb:app_id"/>
+   <link href="http://www.builtinchicago.org/sites/all/themes/bic/res/img/opengraph_default_image.png" rel="image_src"/>
+   <!-- CSS aggregated by CDN module. -->
+   <link href="http://css.cdn.builtinchicago.org/sites/default/files/css/cdn_css_http_60e13248829dc334e151f0ddfb3dcbb9.css" media="all" rel="stylesheet" type="text/css"/>
+   <link href="http://css.cdn.builtinchicago.org/sites/default/files/css/cdn_css_http_601afc2c80f1cb2b7634b437049f503b.css" media="print" rel="stylesheet" type="text/css"/>
+   <!-- CSS aggregated by CDN module. -->
+   <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-18910776-1", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+   </script>
+  </meta>
+ </head>
+ <body class="page not-front not-logged-in node-type-job no-sidebars page-job-support-developer-3 section-job site-chicago">
+  <div id="pseudo-overlay-div">
+  </div>
+  <div class="navbar navbar-inverse navbar-fixed-top" id="user-bar">
+   <div class="navbar-inner">
+    <div class="container">
+     <a class="logo brand" href="/" rel="home" title="Home">
+      <span class="aligner">
+      </span>
+      <img alt="" src="http://media3.cdn.builtinchicago.org/sites/all/themes/bic/res/img/logo-white-anon-chicago.png"/>
+     </a>
+     <div class="nav-collapse collapse">
+      <div class="region region-user-navigation">
+       <div class="block block-bix_user_nav user_navigation clearfix" id="block-bix_user_nav-bix_user_nav">
+        <div class="content">
+         <ul class="menu nav user-menu">
+          <li class="first" role="presentation">
+           <a class="loggedout-menuitem menuitem-2" href="/blogs" role="menuitem" title="NEWS">
+            NEWS
+           </a>
+          </li>
+          <li role="presentation">
+           <a class="loggedout-menuitem menuitem-3" href="/events" role="menuitem" title="EVENTS">
+            EVENTS
+           </a>
+           <div class="item-list">
+            <ul role="presentation">
+             <li class="first last">
+              <a href="/built-brews">
+               Built In Brews
+              </a>
+             </li>
+            </ul>
+           </div>
+          </li>
+          <li role="presentation">
+           <a class="loggedout-menuitem menuitem-4" href="/companies" role="menuitem" title="STARTUPS">
+            STARTUPS
+           </a>
+          </li>
+          <li class="last" role="presentation">
+           <a class="loggedout-menuitemmenuitem-1" href="/jobs" role="menuitem" title="JOBS">
+            JOBS
+           </a>
+           <div class="item-list">
+            <ul role="presentation">
+             <li class="first">
+              <a class="ctools-use-modal add-job ctools-modal-modal-popup-signin" href="/modal_forms/nojs/login?destination=manage-jobs" title="">
+               <span class="icon">
+               </span>
+               Post a Job
+              </a>
+             </li>
+             <li class="last">
+              <a class="loggedout-menuitem menuitem-2" href="/jobs" role="menuitem" title="View all jobs">
+               View all jobs
+              </a>
+             </li>
+            </ul>
+           </div>
+          </li>
+         </ul>
+         <a class="post-job-top-menu" href="/jobs/why-are-we-different" role="menuitem">
+          Post a Job
+         </a>
+         <div class="menu-header-leftwrap">
+          <div class="pull-left search-block-top">
+           <a class="trigger-search" href="/%2523" role="menuitem">
+            <span class="search-home-icon">
+            </span>
+            SEARCH
+           </a>
+           <div class="search-box-air hide">
+            <form accept-charset="UTF-8" action="/search/site" id="search-block-form" method="post">
+             <div class="form-inner">
+              <div class="container-inline">
+               <div class="form-text" id="edit-search-block-form-1-wrapper" placeholder="Search" title="Enter the terms you wish to search for.">
+                <input class="form-text" id="edit-search-block-form-1" maxlength="128" name="search_block_form" placeholder="Search" size="15" title="Enter the terms you wish to search for." type="text" value=""/>
+               </div>
+               <button class="form-submit hide-submit-exclude" id="edit-submit" name="op" type="submit" value="Search">
+                Search
+               </button>
+               <input id="form-zpk9nJ2zOCBzvP0SrRw8qWr2LvpPby3-D9RHGubHX04" name="form_build_id" type="hidden" value="form-zpk9nJ2zOCBzvP0SrRw8qWr2LvpPby3-D9RHGubHX04"/>
+               <input id="edit-search-block-form" name="form_id" type="hidden" value="search_block_form"/>
+              </div>
+             </div>
+            </form>
+           </div>
+          </div>
+          <ul class="menu nav signupin-menu pull-right">
+           <li class="half-line first">
+            <span class="aligner">
+            </span>
+            <a class="ctools-use-modal ctools-modal-modal-popup-custom-login" data-ga-event="sign up button: nav bar" href="/modal_forms/nojs/register/popup?destination=esi%2Fblock%2Fbic%3Auser_navigation%3Abix_user_nav%3Abix_user_nav%2FCACHE%3DUSER">
+             <span class="icon">
+             </span>
+             <span class="dropdown-icon bix-icon-signup">
+             </span>
+             sign up
+            </a>
+           </li>
+           <li class="half-line last">
+            <span class="aligner">
+            </span>
+            <a class="ctools-use-modal ctools-modal-modal-popup-custom-login" href="/modal_forms/nojs/login/popup" title="">
+             <span class="icon">
+             </span>
+             log in
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- /.region -->
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="navbar navbar-inverse navbar-fixed-top" id="navigation">
+   <div class="navbar-inner">
+    <div class="container">
+    </div>
+   </div>
+  </div>
+  <!-- /.section, /#navigation -->
+  <div id="page-wrapper">
+   <div class="clearfix" id="page">
+    <div id="main-wrapper">
+     <div id="header" style="display: none">
+      <div class="section clearfix">
+       <div class="header-left">
+        <a href="/" id="logo" rel="home" title="Home">
+         <img alt="Home" src="http://media4.cdn.builtinchicago.org/sites/all/themes/bic/logo.png"/>
+        </a>
+       </div>
+       <div class="header-right">
+       </div>
+      </div>
+     </div>
+     <!-- /.section, /#header -->
+     <div id="highlight">
+      <div class="section clearfix">
+      </div>
+     </div>
+     <div class="column" id="content">
+      <div class="section">
+       <div class="content-region" id="content-area">
+        <div class="container nj-job-container">
+         <div class="row">
+          <div class="span12">
+           <div class="nj-job-info-block">
+            <div class="row">
+             <div class="nj-span-left">
+              <div class="nc-company-sliders">
+               <ul class="bxslider">
+                <li>
+                 <iframe allowfullscreen="" frameborder="0" height="396" mozallowfullscreen="" src="https://youtube.com/embed/2_pfspRzKok" webkitallowfullscreen="" width="540">
+                 </iframe>
+                </li>
+                <li>
+                 <img src="http://media5.cdn.builtinchicago.org/sites/default/files/imagecache/company-slider-v2/_mg_4953-1_0.jpg"/>
+                </li>
+                <li>
+                 <img src="http://media3.cdn.builtinchicago.org/sites/default/files/imagecache/company-slider-v2/bt-5246.jpg"/>
+                </li>
+                <li>
+                 <img src="http://media3.cdn.builtinchicago.org/sites/default/files/imagecache/company-slider-v2/bt-5179_0.jpg"/>
+                </li>
+                <li>
+                 <img src="http://media.cdn.builtinchicago.org/sites/default/files/imagecache/company-slider-v2/bt-5124.jpg"/>
+                </li>
+               </ul>
+              </div>
+             </div>
+             <div class="nj-span-right">
+              <div class="nc-company-desc">
+               <div class="nc-company-desc-text">
+                <div class="text-center">
+                 <a class="logo-img" href="/company/braintree-0">
+                  <img src="http://media3.cdn.builtinchicago.org/sites/default/files/imagecache/companies_small/company_logos/btpp-350-light.png"/>
+                 </a>
+                </div>
+               </div>
+               <div class="nc-content-box-in">
+                <p>
+                 Braintree builds products that make payments easier—so easy that they fade into the background, making entirely new kinds of interactions possible. We're known for our technology but we're also known for our support, with internal risk and underwriting, account management and technical support teams who ensure a frictionless payments experience.
+                </p>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="span12">
+          <div class="row">
+           <div class="job-top-content-wrapper ">
+            <div class="job-top-title-wrapper">
+             <span class="nj-job-title">
+              Support Developer
+             </span>
+             <span class="nj-company-title">
+              at
+              <span class="nc-fallback-title">
+               <a href="/company/braintree-0">
+                Braintree
+               </a>
+              </span>
+             </span>
+            </div>
+            <div class="job-top-detail-wrapper">
+             <div class="nj-job-city-wrapper">
+              <span class="citymarker-icon">
+              </span>
+              <span class="nj-job-city">
+               Chicago
+              </span>
+             </div>
+             <div class="nj-job-company-profile-wrapper">
+              <span class="company-follow-icon">
+              </span>
+              <span class="nj-job-company-profile">
+               <a bix-click-campaign="follow-company-from-job" class="ctools-use-modal job-alert-button" data-ga-event="Job Alert Follow" href="/modal_forms/nojs/53750/job-alert" nid="123678">
+                Follow Company
+               </a>
+              </span>
+             </div>
+             <div class="nj-save-job-wrapper">
+              <span class="nj-save-job">
+               <span class="star-marker-icon" id="star-marker-icon">
+               </span>
+               <a class="ctools-use-modal ctools-modal-modal-popup-custom-login" href="/modal_forms/nojs/login/popup" title="">
+                <span class="icon">
+                </span>
+                Save Job
+               </a>
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<div class="nj-company-website-wrapper">
+ <span class="websitemarker-icon">
+ </span>
+ <span class="nj-company-website">
+  <a 0='s:13:"s:6:"a:0:{}";";' href="https://www.braintreepayments.com/" rel="nofollow" target="_blank">
+   Visit their site
+  </a>
+ </span>
+</div>
+<!-- Top content wrapper end -->
+<div class="nj-span-left-content ">
+ <div class="job-top-header-wrapper">
+  <span class="nj-job-body">
+   <div>
+    <div>
+     <p>
+      <b>
+       About Us:
+      </b>
+     </p>
+     <p>
+      Braintree builds products that make payments easier—so easy that they fade into the background, making entirely new kinds of interactions possible. Interactions like seamlessly paying for your ride share -- or the condo you rented this weekend -- without presenting a card or pressing a button, or buying a lamp on Pinterest...right
+      <b>
+       from
+      </b>
+      Pinterest. The Braintree full-stack payment platform lets companies build their own experiences and then scale their businesses around the globe. We're known for our technology but we're also known for our support, with internal risk and underwriting, account management and technical support teams who ensure a frictionless payments experience.
+     </p>
+     <p>
+      Acquired by PayPal in 2013, Braintree is now in an even greater position to change the way people pay. Headquartered in Chicago, Braintree has offices in San Francisco, New York, Sydney, London with employees stationed around the world.
+     </p>
+     <p>
+      <strong>
+       Support Developer:
+      </strong>
+     </p>
+     <p>
+      Support Devs at Braintree help merchants in a meaningful way by using their development chops to assist with integration and ongoing support where our APIs are concerned. At heart of what we do best is deliver white glove support for elegant technology. The Support Developer role sits at the intersection of these two things that make us renowned.
+     </p>
+     <p>
+      <b>
+       Responsibilities:
+      </b>
+     </p>
+     <ul>
+      <li>
+       <p>
+        Build integrations in a plethora of languages: Ruby, Python, PHP, Java, Node.js, .NET and more.
+       </p>
+      </li>
+      <li>
+       <p>
+        Define best practices for merchants implementing payment processing logic
+       </p>
+      </li>
+      <li>
+       <p>
+        Update our API documentation and deploy updates
+       </p>
+      </li>
+      <li>
+       <p>
+        Work with our Product Managers to discuss the features that our customers most frequently request
+       </p>
+      </li>
+      <li>
+       <p>
+        Resolve support tickets from merchant developers
+       </p>
+      </li>
+      <li>
+       <p>
+        Explain to a merchant developer why they are seeing behavior they didn’t expect and be able to de-bug a snippet of code
+       </p>
+      </li>
+      <li>
+       <p>
+        Find and fix bugs in our software based on a support question
+       </p>
+      </li>
+      <li>
+       <p>
+        Design a workaround for a use case that’s not yet directly supported
+       </p>
+      </li>
+      <li>
+       <p>
+        Take the occasional incoming phone call from a developer with integration questions
+       </p>
+      </li>
+      <li>
+       <p>
+        Migrate customer data from other payment processors into Braintree’s vault
+       </p>
+      </li>
+     </ul>
+     <p>
+      <b>
+       Qualifications:
+      </b>
+     </p>
+     <ul>
+      <li>
+       <p>
+        Programming foundation in Ruby + Rails, Python, PHP, Node.js, Java, .NET or any other modern language
+       </p>
+      </li>
+      <li>
+       <p>
+        Working knowledge of one or several object-oriented or functional programming languages.
+       </p>
+      </li>
+      <li>
+       <p>
+        Linux/Unix command line
+       </p>
+      </li>
+      <li>
+       <p>
+        General web development skills in HTML, CSS, or JavaScript
+       </p>
+      </li>
+      <li>
+       <p>
+        SQL a plus
+       </p>
+      </li>
+      <li>
+       <p>
+        Version Control: Git preferred
+       </p>
+      </li>
+     </ul>
+     <p>
+      <strong>
+       We value our people...
+      </strong>
+     </p>
+     <p>
+      <strong>
+       -
+      </strong>
+      Two paid conference trips annually
+     </p>
+     <p>
+      -Open Dev Day twice a month
+     </p>
+     <p>
+      -Catered lunches daily
+     </p>
+     <p>
+      -Commuter reimbursement program
+     </p>
+     <p>
+      <strong>
+       Take a look at some of our blog posts and code on GitHub:
+      </strong>
+     </p>
+     <p>
+      Braintrust
+      <br/>
+      <br/>
+      Braintree GitHub
+     </p>
+    </div>
+   </div>
+  </span>
+  <div class="nj-job-applynow">
+   <span class="how-to-apply-placeholder">
+   </span>
+   <a bix-click-campaign="apply-now-button" class="applynow-button" data-ga-page="/goals/job-how-to-apply" href="#" id="apply-now-button" job_mapped_category="0" nid="123678">
+    Apply now
+   </a>
+   <span class="nj-how-to-apply" id="nj-how-to-apply">
+    <label class="how-to-apply-label">
+     How to apply:
+    </label>
+    <span class="field-how-to-apply">
+     <a href="http://grnh.se/v0458l" target="_blank">
+      http://grnh.se/v0458l
+     </a>
+    </span>
+   </span>
+  </div>
+  <div class="nj-job-savejob-wrapper">
+   <div class="save-job-container">
+    <span class="save-job-placeholder" id="save-job-placeholder">
+    </span>
+    <span class="flag-save-job">
+     <a class="ctools-use-modal ctools-modal-modal-popup-custom-login" href="/modal_forms/nojs/login/popup" title="">
+      <span class="icon">
+      </span>
+      Save Job
+     </a>
+    </span>
+   </div>
+   <div class="send-email-container">
+    <span class="email-job-placeholder">
+    </span>
+    <a class="ctools-use-modal ctools-modal-modal-popup-medium email-job-link" href="/bic_modal/nojs/jobs_forward?path=node/123678" title="Email this job">
+     <span class="icon">
+     </span>
+     Email
+    </a>
+   </div>
+  </div>
+ </div>
+ <div class="job-bottom-content-wrapper">
+  <h3>
+   Company Reviews
+  </h3>
+  <div class="nj-testimonial-container">
+   <div class="nj-testimonial-text">
+    "Whether you're teaming up on a project with a developer, underwriter, or support agent, you're bound to learn something new. It makes you want to bring your best work every day."
+   </div>
+   <div class="quote-arrow">
+    <div class="quote-arrow-top">
+    </div>
+    <div class="quote-arrow-bottom">
+    </div>
+   </div>
+   <div class="nj-testimonial-emp-image">
+    <img alt="" class="imagecache imagecache-employee_image_preset" src="http://www.builtinchicago.org/sites/default/files/imagecache/employee_image_preset/" title=""/>
+   </div>
+   <div class="nj-testimonial-text-wrap">
+    <div class="nj-testimonial-emp-name">
+     Kent Green
+    </div>
+    <div class="nj-testimonial-emp-title">
+     Product Team
+    </div>
+    <div class="nj-testimonial-emp-company">
+     at Braintree
+    </div>
+   </div>
+  </div>
+  <div class="nj-testimonial-container">
+   <div class="nj-testimonial-text">
+    "I've never been surrounded by such talented and capable minds -- it motivates you to become better every day."
+   </div>
+   <div class="quote-arrow">
+    <div class="quote-arrow-top">
+    </div>
+    <div class="quote-arrow-bottom">
+    </div>
+   </div>
+   <div class="nj-testimonial-emp-image">
+   </div>
+   <div class="nj-testimonial-text-wrap">
+    <div class="nj-testimonial-emp-name">
+     Dan Uhle
+    </div>
+    <div class="nj-testimonial-emp-title">
+     Operations Project Manager
+    </div>
+    <div class="nj-testimonial-emp-company">
+     at Braintree
+    </div>
+   </div>
+  </div>
+  <div class="nj-testimonial-container">
+   <div class="nj-testimonial-text">
+    "A perfect job has always been working with people I like &amp; doing work that solves problems. I work with people I love + trust, while providing tools merchants need. It doesn't get better than this."
+   </div>
+   <div class="quote-arrow">
+    <div class="quote-arrow-top">
+    </div>
+    <div class="quote-arrow-bottom">
+    </div>
+   </div>
+   <div class="nj-testimonial-emp-image">
+   </div>
+   <div class="nj-testimonial-text-wrap">
+    <div class="nj-testimonial-emp-name">
+     Rachel Adams
+    </div>
+    <div class="nj-testimonial-emp-title">
+     Account Manager
+    </div>
+    <div class="nj-testimonial-emp-company">
+     at Braintree
+    </div>
+   </div>
+  </div>
+ </div>
+ <span class="nj-job-find-more">
+  <a href="/jobs">
+   Find more startup and tech jobs in Chicago
+  </a>
+  <span class="arrow-right-blue">
+  </span>
+ </span>
+</div>
+<div class="nj-span-right-content">
+ <a bix-click-campaign="apply-now-button" class="sidebar-apply-now" data-ga-event="Apply now web" href="#" id="apply-now-button" job_mapped_category="0" nid="123678">
+  Apply now
+ </a>
+ <div class="how-to-wrapper">
+  <div class="how-to-label">
+   How to apply
+  </div>
+  <div class="sidebar-how-to">
+   <a href="http://grnh.se/v0458l" target="_blank">
+    http://grnh.se/v0458l
+   </a>
+  </div>
+ </div>
+ <div class="views_view view view-jobs view-id-jobs view-display-id-job_sidebar_company_detail view-dom-id-c8a7d2d92f662e2bb69430eb4074f2c8">
+  <div class="view-content">
+   <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    <div class="views-field views-field-field-why-work-us-value">
+     <span class="views-label views-label-field-why-work-us-value">
+      Why work with us
+     </span>
+     <span class="plus-placeholder">
+     </span>
+     <!--* This is placed in tpl file -->
+     <div class="field-content">
+      Every time you pay for an Uber ride or book on Airbnb, you’re using our product. Braintree lets you move money from one place to another safely and securely. It sounds complex (and it is), but we make it so simple, you wouldn't know we were there.
+We're people-focused, inside and out. We put our people first, whether it's employees or our clients.
+     </div>
+    </div>
+    <div class="views-field views-field-field-company-culture-value">
+     <span class="views-label views-label-field-company-culture-value">
+      Culture
+     </span>
+     <span class="plus-placeholder">
+     </span>
+     <!--* This is placed in tpl file -->
+     <div class="field-content">
+      At Braintree, opportunities to shine happen daily. We value what makes you different, and encourage you to act on your ideas–no matter how pie in the sky. You bring skills and a customer-first mentality and we'll bring the tools and environment you need to do the best work of your life.
+     </div>
+    </div>
+    <div class="views-field views-field-field-perks-benifits-value">
+     <span class="views-label views-label-field-perks-benifits-value">
+      Perks &amp; Benefits
+     </span>
+     <span class="plus-placeholder">
+     </span>
+     <!--* This is placed in tpl file -->
+     <div class="field-content">
+      <div class="field-item field-item-0">
+       health insurance
+      </div>
+      <div class="field-item field-item-1">
+       dental insurance
+      </div>
+      <div class="field-item field-item-2">
+       public transit reimbursement
+      </div>
+      <div class="field-item field-item-3">
+       tuition reimbursement
+      </div>
+      <div class="field-item field-item-4">
+       life insurance
+      </div>
+      <div class="field-item field-item-5">
+       PTO and sabbatical program
+      </div>
+      <div class="field-item field-item-6">
+       charitable matching program
+      </div>
+      <div class="field-item field-item-7">
+       vision insurance
+      </div>
+      <div class="field-item field-item-8">
+       snacks, snacks, snacks and catered lunch daily
+      </div>
+      <div class="field-item field-item-9">
+       great equipment including mac laptops and google chromeboxes in all conference rooms
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- /.view -->
+</div>
+<!-- /container -->
+<!-- /.section, /#content -->
+<!-- /#main, /#main-wrapper -->
+<div class="clearfix" id="footer">
+</div>
+<!-- /.section, /#footer -->
+<!-- /#page, /#page-wrapper -->
+<div class="footer-wrapper">
+ <div class="footer-content-wrapper">
+  <div class="footer-social-links">
+   <div class="item-list">
+    <ul class="round-social-links">
+     <li class="social-links social-linkedin first">
+      <a class="bix-icon-round-linkedin" href="http://www.linkedin.com/company/2345366" target="_blank">
+       Follow on LinkedIn
+      </a>
+     </li>
+     <li class="social-links social-facebook">
+      <a class="bix-icon-round-facebook" href="http://facebook.com/BuiltInChicago" target="_blank">
+       Like on Facebook
+      </a>
+     </li>
+     <li class="social-links social-twitter last">
+      <a class="bix-icon-round-twitter" href="http://twitter.com/builtinchicago" target="_blank">
+       Follow on Twitter
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div id="footer_menu">
+   <div class="footer-menu-block">
+    <div class="footer-menu-title">
+     Contact
+    </div>
+    <div class="item-list">
+     <ul class="footer_left">
+      <li class="first">
+       <a href="/premium/membership" rel="nofollow">
+        Premium Talent Solutions
+       </a>
+      </li>
+      <li>
+       <a href="/send-us-a-tip" rel="nofollow">
+        Send Us a Tip
+       </a>
+      </li>
+      <li>
+       <a href="/contact-us" rel="nofollow">
+        General Inquiries
+       </a>
+      </li>
+      <li class="last">
+       <a href="/sponsors" rel="nofollow">
+        Become a Sponsor
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="footer-menu-block">
+    <div class="footer-menu-title">
+     About
+    </div>
+    <div class="item-list">
+     <ul class="footer_middle">
+      <li class="first">
+       <a href="/our-team" rel="nofollow">
+        Our Team
+       </a>
+      </li>
+      <li>
+       <a href="/investors" rel="nofollow">
+        Our Investors
+       </a>
+      </li>
+      <li>
+       <a href="/terms-use" rel="nofollow">
+        Terms of Use
+       </a>
+      </li>
+      <li class="last">
+       <a href="/privacy-policy" rel="nofollow">
+        Privacy Policy
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="footer-menu-block last">
+    <div class="footer-menu-title footer-copyright-title">
+     Powered By
+    </div>
+    <div class="item-list">
+     <ul class="footer_right">
+      <li class="first">
+       <a href="http://www.builtinaustin.com/jobs">
+        Built In Austin
+       </a>
+      </li>
+      <li>
+       <a href="http://www.builtinchicago.org/jobs">
+        Built In Chicago
+       </a>
+      </li>
+      <li>
+       <a href="http://www.builtincolorado.com/jobs">
+        Built In Colorado
+       </a>
+      </li>
+      <li>
+       <a href="http://www.builtinla.com/jobs">
+        Built In LA
+       </a>
+      </li>
+      <li class="last">
+       <a href="http://www.builtinnyc.com/jobs">
+        Built In NYC
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<div class="colorbox-inline-content" id="jobs-out-of-credit">
+ <h2>
+  Oh no!
+ </h2>
+ <p>
+  You're fresh out of job post slots.
+ </p>
+ <a class="out-of-jobs-upgrade" href="/jobs/upgrade-plan">
+  Upgrade your plan
+ </a>
+ <a class="out-of-jobs-dashboard" href="/jobs/myjobsposts">
+  manage current jobs
+ </a>
+</div>
+<div class="clearfix new-signup-box" id="registration-form">
+ <div class="column registration-intro">
+  <div class="logo">
+   <div class="text-center">
+    <img alt="logo" src="http://media3.cdn.builtinchicago.org/sites/all/themes/bic/res/img/new_logo-chicago.png"/>
+   </div>
+  </div>
+  <h2>
+   Create an account
+  </h2>
+  <div class="item-list">
+   <ul>
+    <li class="social-signin facebook-connect first last">
+     <div class="social-links">
+      <div class="social-link facebook">
+       Facebook
+      </div>
+      <a class="facebook-action-connect action-link" href="https://www.facebook.com/dialog/oauth?client_id=369946383023044&amp;redirect_uri=http%3A%2F%2Fwww.builtinchicago.org%2Ffboauth%2Fconnect&amp;scope=email%2Cemail&amp;state=direct-node_none">
+       connect with Facebook
+      </a>
+     </div>
+    </li>
+   </ul>
+  </div>
+ </div>
+</div>
+<div id="job-view-registration">
+ <div class="job-view-header">
+  <h2>
+   Let startups find you
+  </h2>
+  <p>
+   Create a profile and upload your resume today.
+  </p>
+ </div>
+ <div class="job-view-social">
+  <div class="item-list">
+   <ul>
+    <li class="social-signin facebook-connect first last">
+     <div class="social-links">
+      <div class="social-link facebook">
+       Facebook
+      </div>
+      <a class="facebook-action-connect action-link" href="https://www.facebook.com/dialog/oauth?client_id=369946383023044&amp;redirect_uri=http%3A%2F%2Fwww.builtinchicago.org%2Ffboauth%2Fconnect&amp;scope=email%2Cemail&amp;state=direct-node_none">
+       connect with Facebook
+      </a>
+     </div>
+    </li>
+   </ul>
+  </div>
+ </div>
+</div>
+<div class="ajax-saved-job-icon">
+ <a class="user-icons icon-star" data-original-title="Saved Jobs" href="#popover-save-jobs-content" title="">
+  Saved Jobs
+ </a>
+</div>
+<div class="popover-saved-jobs-wrapper element-hidden" id="popover-saved-jobs-wrapper">
+ <div class="popover-saved-jobs" id="popover-saved-jobs">
+  <span class="pin-icon">
+  </span>
+  <div class="saved-jobs-popup-title">
+   Job Saved
+  </div>
+  <div class="save-jobs-text">
+   Find your saved jobs by scrolling over this star
+  </div>
+  <button class="save-jobs-button">
+   Got it
+  </button>
+ </div>
+</div>
+<!--  
+  <!-- page_closure start -->
+<!-- page_closure -->
+<script src="http://js.cdn.builtinchicago.org/sites/default/files/js/js_7de8cbafa9b7583764518145905e7b9c.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+ <!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","chartbeat":{"uid":27843,"domain":"www.builtinchicago.org"},"colorbox":{"transition":"elastic","speed":350,"opacity":0.75,"slideshow":false,"slideshowAuto":false,"slideshowSpeed":2500,"slideshowStart":"","slideshowStop":"","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","overlayClose":true,"maxWidth":"100%","maxHeight":"100%","className":"dummycl"},"googleAnalyticsReportsAjaxUrl":"\/google-analytics-reports\/ajax","modal-popup-small":{"modalSize":{"type":"fixed","width":300,"height":300},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e","closeText":"Close"},"modal-popup-medium":{"modalSize":{"type":"fixed","width":550,"height":450},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e","closeText":"Close"},"modal-popup-large":{"modalSize":{"type":"scale","width":0.8,"height":0.8},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e","closeText":"Close"},"CToolsModal":{"loadingText":"Loading...","closeText":"Close Window","closeImage":"\u003cimg src=\"http:\/\/media5.cdn.builtinchicago.org\/sites\/all\/modules\/ctools\/images\/icon-close-window.png\" alt=\"Close window\" title=\"Close window\" width=\"16\" height=\"16\" \/\u003e","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/ctools\/images\/throbber.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e"},"user_relationships_ui":{"loadingimage":"\/sites\/all\/modules\/user_relationships\/user_relationships_ui\/images\/loadingAnimation.gif","savingimage":"\/sites\/all\/modules\/user_relationships\/user_relationships_ui\/images\/savingimage.gif","position":{"position":"fixed","left":".35","top":".3"}},"hide_submit":{"selector":"input:submit:not(.hide-submit-exclude)","mode":"hide","keypress":"1","dbg":false,"message":"\u003cp class=\"hide_submit\"\u003e\u003cimg src=\"http:\/\/media4.cdn.builtinchicago.org\/sites\/all\/modules\/hide_submit\/images\/loader.gif\" alt=\"\" title=\"\" \/\u003e\u0026nbsp; Please wait... \u003c\/p\u003e","image":"http:\/\/media4.cdn.builtinchicago.org\/sites\/all\/modules\/hide_submit\/images\/loader.gif"},"bic_jobs":{"developer_tid":"78"},"bic_custom":{"isMobile":false},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"CToolsUrlIsAjaxTrusted":{"\/search\/site":[true,true]},"select2":{"local":[],"attach":[]},"bic_jobs_nid":"123678","nid":"123678","bix":{"city":"Chicago","siteName":"Built In Chicago","facebook_appid":"369946383023044","twitter_handler":"BuiltInChicago"},"custom_page_bg":"http:\/\/www.builtinchicago.org\/sites\/all\/themes\/bic\/res\/img\/bg-page.jpg","cookieDomain":".builtinchicago.org","use_janrain_logins":false,"modal-popup-signin":{"modalSize":{"type":"dynamic","width":379,"height":460},"modalOptions":{"opacity":0.75,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsSignIn","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e","closeText":"Close"},"modal-popup-signup":{"modalSize":{"type":"dynamic","width":758,"height":397},"modalOptions":{"opacity":0.75,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsSignUp","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e","closeText":"Close"},"modal-popup-custom-login":{"modalSize":{"type":"dynamic","width":820,"height":500},"modalOptions":{"opacity":0.97,"background":"#fff"},"modalTheme":"ModalFormsCustomSignIn","animation":"fadeIn","throbber":"\u003cimg src=\"http:\/\/media2.cdn.builtinchicago.org\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\" alt=\"Loading...\" title=\"Loading\" width=\"32\" height=\"32\" \/\u003e","closeText":"Close","loadingText":"Yo Yo","closeImage":"\u003cimg src=\"http:\/\/media5.cdn.builtinchicago.org\/sites\/all\/modules\/ctools\/images\/icon-close-window.png\" alt=\"Close\" title=\"Close\" width=\"16\" height=\"16\" \/\u003e"}});
+//--><!]]>
+</script>
+<!-- facebook -->
+<div id="fb-root">
+</div>
+<!--
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  -->
+<!-- twitter -->
+<!--
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  -->
+<!-- Google+ -->
+<!--
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+  -->
+<!-- closure -->
+<script type="text/javascript">
+ var _sf_async_config=Drupal.settings.chartbeat;
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+         (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+         "static.chartbeat.com/js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<div class="user_relationships_ui_popup_form" id="user_relationships_popup_form">
+</div>
+<script src="http://js.cdn.builtinchicago.org/sites/default/files/js/js_caccb8af4e171289ee699020ca34cf58.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+ <!--//--><![CDATA[//><!--
+
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName('script')[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/8062.js";
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+      
+//--><!]]>
+</script>
+<script type="text/javascript">
+ <!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"CToolsAJAX":{"scripts":{"\/sites\/all\/modules\/jquery_update\/replace\/jquery\/1.3\/jquery.min.js":true,"\/misc\/drupal.js":true,"\/sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":true,"\/sites\/all\/modules\/colorbox\/js\/colorbox.js":true,"\/sites\/all\/modules\/colorbox\/js\/colorbox_load.js":true,"\/sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":true,"\/sites\/all\/modules\/custom\/bix_autocomplete\/autocomplete.js":true,"\/sites\/all\/modules\/jquery_update\/replace\/jquery.form.js":true,"\/sites\/all\/modules\/ctools\/js\/ajax-responder.js":true,"\/sites\/all\/modules\/ctools\/js\/modal.js":true,"\/sites\/all\/modules\/modal_forms\/js\/modal_forms_popup.js":true,"\/sites\/all\/modules\/panels\/js\/panels.js":true,"\/sites\/all\/modules\/ubercart\/uc_roles\/uc_roles.js":true,"\/sites\/all\/modules\/user_relationships\/user_relationships_ui\/user_relationships_ui.js":true,"\/sites\/all\/modules\/hide_submit\/hide_submit.js":true,"\/sites\/all\/modules\/custom\/bic_custom\/js\/bic_custom_linkedin_broke.js":true,"\/sites\/all\/modules\/bic_section_companies\/js\/companies-node.js":true,"\/sites\/all\/modules\/google_analytics\/googleanalytics.js":true,"\/sites\/all\/modules\/custom\/google_social\/js\/google_social.js":true,"\/sites\/all\/modules\/custom\/select2\/select2.js":true,"\/sites\/all\/modules\/bic_jobs\/bic_jobs_record.js":true,"\/sites\/all\/themes\/bic\/res\/js\/jquery.bxslider.js":true,"\/sites\/all\/modules\/custom\/bic_custom\/bic_custom.js":true,"\/sites\/all\/themes\/bic\/res\/js\/jquery.validate.min.js":true,"\/sites\/all\/modules\/custom\/user_relationships_ui_ajax\/user_relationships_ui_ajax.js":true,"\/sites\/all\/modules\/google_analytics_reports\/google_analytics_reports\/google_analytics_reports.js":true},"css":{"\/modules\/node\/node.css":true,"\/modules\/system\/defaults.css":true,"\/modules\/system\/system.css":true,"\/modules\/system\/system-menus.css":true,"\/modules\/user\/user.css":true,"\/sites\/all\/modules\/cck\/theme\/content-module.css":true,"\/sites\/all\/modules\/ctools\/css\/ctools.css":true,"\/sites\/all\/modules\/date\/date.css":true,"\/sites\/all\/modules\/date\/date_popup\/themes\/datepicker.css":true,"\/sites\/all\/modules\/date\/date_popup\/themes\/jquery.timeentry.css":true,"\/sites\/all\/modules\/filefield\/filefield.css":true,"\/sites\/all\/modules\/google_analytics_reports\/google_analytics_reports\/google_analytics_reports.css":true,"\/sites\/all\/modules\/linkedin\/linkedin_auth\/linkedin_auth.css":true,"\/sites\/all\/modules\/ctools\/css\/modal.css":true,"\/sites\/all\/modules\/panels\/css\/panels.css":true,"\/sites\/all\/modules\/tagadelic\/tagadelic.css":true,"\/sites\/all\/modules\/ubercart\/uc_order\/uc_order.css":true,"\/sites\/all\/modules\/ubercart\/uc_product\/uc_product.css":true,"\/sites\/all\/modules\/ubercart\/uc_roles\/uc_roles.css":true,"\/sites\/all\/modules\/ubercart\/uc_store\/uc_store.css":true,"\/sites\/all\/modules\/user_relationships\/user_relationships_ui\/user_relationships_ui.css":true,"\/sites\/all\/modules\/video_filter\/video_filter.css":true,"\/misc\/farbtastic\/farbtastic.css":true,"\/sites\/all\/modules\/calendar\/calendar.css":true,"\/sites\/all\/modules\/cck\/modules\/fieldgroup\/fieldgroup.css":true,"\/sites\/all\/modules\/views\/css\/views.css":true,"\/modules\/comment\/comment.css":true,"\/sites\/all\/themes\/bic\/res\/css\/normalize.css":true,"\/sites\/all\/themes\/bic\/res\/css\/forms.css":true,"\/sites\/all\/themes\/bic\/res\/css\/formalize.css":true,"\/sites\/all\/themes\/bic\/res\/css\/colorbox.css":true,"\/sites\/all\/themes\/bic\/res\/css\/modal_forms_popup.css":true,"\/sites\/all\/themes\/bic\/res\/css\/font-awesome.min.css":true,"\/sites\/all\/themes\/bic\/res\/css\/style.css":true,"\/sites\/all\/themes\/bic\/res\/css\/bic.css":true,"\/sites\/all\/themes\/bic\/res\/css\/front.css":true,"\/sites\/all\/themes\/bic\/res\/css\/landing.css":true,"\/sites\/all\/themes\/bic\/res\/css\/anythingslider.css":true,"\/sites\/all\/themes\/bic\/res\/css\/bic_ubercart.css":true,"\/sites\/all\/themes\/bic\/res\/css\/toggle.css":true,"\/sites\/all\/themes\/bic\/res\/css\/jquery.bxslider.css":true,"\/sites\/all\/modules\/bic_section_companies\/css\/companies.css":true,"\/sites\/all\/themes\/bic\/res\/css\/print.css":true}}});
+//--><!]]>
+</script>
+<!-- Invite section -->
+<div class="bix-invite-section">
+ <div class="bix-invite-section-close">
+ </div>
+ <div class="bix-invite-section-title">
+  Invite Your Contacts to Built In Chicago
+ </div>
+ <div class="bix-invite-section-body">
+  <div class="link-item gmail-invite-link">
+   <div class="link-item-img">
+    <img src="http://media5.cdn.builtinchicago.org/sites/all/themes/bic/res/img/invite-gmail-icon.png"/>
+   </div>
+   <a href="https://accounts.google.com/o/oauth2/auth?client_id=225722871618-ci5fn0cfr7hb5hdru7lie1b3tdeetkep.apps.googleusercontent.com&amp;redirect_uri=http://www.builtinchicago.org/initiate-gmail-invite&amp;scope=https://www.google.com/m8/feeds/&amp;response_type=code" rel="nofollow" target="_blank">
+    Invite Gmail Contacts
+   </a>
+  </div>
+  <div class="link-item facebook-invite-link">
+   <div class="link-item-img">
+    <img src="http://media.cdn.builtinchicago.org/sites/all/themes/bic/res/img/invite-facebook-icon.png"/>
+   </div>
+   <a href="https://www.facebook.com/dialog/send?app_id=369946383023044&amp;link=http://www.builtinchicago.org/invite/code/0&amp;redirect_uri=http://www.builtinchicago.org/job/support-developer-3" rel="nofollow" target="_blank">
+    Invite Facebook contact
+   </a>
+  </div>
+  <div class="link-item twitter-invite-link">
+   <div class="link-item-img">
+    <img src="http://media5.cdn.builtinchicago.org/sites/all/themes/bic/res/img/invite-twitter-icon.png"/>
+   </div>
+   <a href="https://twitter.com/share?url=http://www.builtinchicago.org/invite/code/0&amp;counturl=http://www.builtinchicago.org/invite/code/0&amp;via=BuiltInChicago&amp;text=Join Me on Built In Chicago" target="_blank">
+    Share link on Twitter
+   </a>
+  </div>
+  <div class="clear">
+  </div>
+ </div>
+</div>
+<div class="bix-invite-section-fade">
+</div>
+<div class="bix-upgrade-section text-center">
+ <div class="bix-upgrade-section-close">
+ </div>
+ <div class="bix-upgrade-section-body">
+  <div id="jobs-out-of-credit">
+   <h2>
+    Oh no!
+   </h2>
+   <p>
+    You're fresh out of job post slots.
+   </p>
+   <a class="out-of-jobs-upgrade" href="/jobs/upgrade-plan">
+    <img src="http://media.cdn.builtinchicago.org/sites/all/themes/bic/res/img/upgrade-your-plan.png"/>
+   </a>
+   <a class="out-of-jobs-dashboard" href="/jobs/myjobsposts">
+    <img src="http://media3.cdn.builtinchicago.org/sites/all/themes/bic/res/img/manage-current-jobs.png"/>
+   </a>
+  </div>
+  <div class="clear">
+  </div>
+ </div>
+</div>
+<div class="bix-upgrade-section-fade">
+</div>
+<!-- Contact Us section -->
